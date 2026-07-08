@@ -11,9 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/r9s/device.mk)
 
 # Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_r9s
+# Infinity
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := indoapril01
+WITH_GAPPS := true
+TARGET_HAS_UDFPS := true
+TARGET_BUILD_GOOGLE_TELEPHONY := true
+
+# Brand Phone
+PRODUCT_NAME := infinity_r9s
 PRODUCT_DEVICE := r9s
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G990E
