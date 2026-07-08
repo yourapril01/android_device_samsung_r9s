@@ -4,4 +4,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_r9s.mk
+    $(LOCAL_DIR)/infinity_r9s.mk
+
+COMMON_LUNCH_CHOICES := \
+    infinity_r9s-eng \
+    infinity_r9s-user \
+    infinity_r9s-userdebug
